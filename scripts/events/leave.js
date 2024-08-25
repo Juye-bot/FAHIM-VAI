@@ -29,8 +29,8 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   }
   msg = msg.replace(/\{name}/g, name).replace(/\{type}/g, type);
 
-  if (existsSync(gifPath)) {
-    formPush = { body: msg, attachment: createReadStream(gifPath) };
+  if (existsSync(mp4Path)) {
+    formPush = { body: msg, attachment: createReadStream(mp4Path) };
   } else {
     formPush = { body: msg };
   }
