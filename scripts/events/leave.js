@@ -16,7 +16,7 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   const name = global.data.userName.get(event.logMessageData.leftParticipantFbId) || await Users.getNameUser(event.logMessageData.leftParticipantFbId);
   const type = (event.author == event.logMessageData.leftParticipantFbId) ? "তোর কতো বড় সাহস আমি ফাহিম bot থাকতে তুই লিফট নিবি? থাপ্পর চিনো তুই☹️😡 🥱দারা তোরে আবার এড দিবো তোরে 🤨😁" : "বাল পাকনামির কারণে কিক খাইলো🤧";
   const path = join(__dirname, "Nayan", "leavemp4");
-  const mp4Path = join(path, `https://i.imgur.com/vB3Z2jy.mp4`);
+  const mp4Path = join(path, `received_2064864567242238.mp4`);
   let msg, formPush;
 
   // Create directory if it does not exist
